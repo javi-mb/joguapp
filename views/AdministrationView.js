@@ -8,6 +8,7 @@ import Balance from "../components/Balance";
 import Buscador from "../components/Buscador";
 import Gasto from "../components/Gasto";
 import Venta from "../components/Venta";
+import Buttons from "../components/Buttons";
 
 const AdministrationView = () => {
   return (
@@ -39,6 +40,8 @@ const AdministrationView = () => {
         <Gasto />
 
         <Venta />
+
+        <Buttons />
       </View>
     </View>
   );
