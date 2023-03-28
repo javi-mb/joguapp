@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import ArrowTwo from "../svg/ArrowTwo";
+import ArrowWeek from "../svg/ArrowWeek";
 import Calendario from "../svg/Calendario";
 import LeftButton from "../svg/LeftButton";
 import RightButton from "../svg/RightButton";
@@ -25,13 +25,14 @@ const Semanal = () => {
           height: 44,
           borderRadius: 10,
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "space-evenly",
           alignItems: "center",
-          gap: 6,
         }}
       >
         <Text style={{ fontSize: 16, fontWeight: 500 }}>Semanal</Text>
-        <ArrowTwo />
+        <View style={{ marginTop: 3 }}>
+          <ArrowWeek />
+        </View>
       </View>
       <View
         style={{
@@ -42,7 +43,7 @@ const Semanal = () => {
           height: 44,
           borderRadius: 10,
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "space-between",
           alignItems: "center",
         }}
       >
@@ -59,14 +60,14 @@ const Semanal = () => {
         <View
           style={{
             flexDirection: "row",
-            width: "70%",
+            width: "80%",
             gap: 6,
             alignItems: "center",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
           }}
         >
           <LeftButton />
-          <Text style={{ fontSize: 16, fontWeight: "500" }}>13-22 Junio</Text>
+          <Text style={{ fontSize: 16, fontWeight: "500" }}>13 - 22 Junio</Text>
           <RightButton />
         </View>
       </View>

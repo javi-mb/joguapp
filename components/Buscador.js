@@ -1,43 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 import React from "react";
 import Lupita from "../svg/Lupita";
 import Filter from "../svg/Filter";
 
 const Buscador = () => {
   return (
-    <View
-      style={{
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: 18,
-      }}
-    >
-      <View
-        style={{
-          backgroundColor: "#F5F5F5",
-
-          width: 343,
-          height: 50,
-          borderRadius: 10,
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <View
-          style={{
-            width: 310,
-            height: "100%",
-            borderRadius: 10,
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            backgroundColor: "#E8E0F1",
-          }}
-        >
+    <View style={styles.container}>
+      <View style={styles.subContainer}>
+        <View style={styles.searchContainer}>
           <View style={{ marginLeft: 8 }}>
-            <Text style={{ color: "#707070" }}>Buscar por concepto</Text>
+            <TextInput placeholder="Buscar por concepto" />
           </View>
           <View style={{ marginRight: 8 }}>
             <Lupita />
@@ -51,4 +23,28 @@ const Buscador = () => {
 
 export default Buscador;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 18,
+  },
+  subContainer: {
+    backgroundColor: "#F5F5F5",
+    width: 343,
+    height: 50,
+    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  searchContainer: {
+    width: 310,
+    height: "100%",
+    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    backgroundColor: "#E8E0F1",
+  },
+});

@@ -5,22 +5,31 @@ import BackButton from "../svg/BackButton";
 
 const Header = () => {
   return (
-    <View>
-      <View style={{ flexDirection: "row", marginTop: 52 }}>
-        <View
-          style={{
-            width: "20%",
-
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <BackButton />
+    <View style={styles.container}>
+      <View
+        style={{
+          flexDirection: "row",
+          gap: 70,
+          alignItems: "stretch",
+          width: "80%",
+        }}
+      >
+        <View>
+          <View
+            style={{
+              width: 32,
+              height: 32,
+              borderRadius: 50,
+              backgroundColor: "#D1C6DE",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <BackButton />
+          </View>
         </View>
         <View
           style={{
-            width: "60%",
-
             justifyContent: "center",
             alignItems: "center",
           }}
@@ -36,4 +45,10 @@ const Header = () => {
 
 export default Header;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
